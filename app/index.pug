@@ -21,69 +21,93 @@ html.no-js(lang='')
     script(src='/bower_components/modernizr/modernizr.js')
     // endbuild
   body
-    <!--[if lt IE 10]>
-      p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
-    <![endif]-->
-    .container
-      .header
-        ul.nav.nav-pills.pull-right
-          li.active: a(href='#') Home
-          li: a(href='#') About
-          li: a(href='#') Contact
-
-        h3.text-muted webapp
-
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top.affix-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |  Menu
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top') Start Bootstrap
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#portfolio') Portfolio
+            li
+              a.page-scroll(href='#contact') Contact
+    header
+      p Michael Perkhofer <small>Full Stack developer</small>
       .jumbotron
-        h1 'Allo, 'Allo!
-        p.lead Always a pleasure scaffolding your apps.
-        p: a.btn.btn-lg.btn-success(href='#') Splendid!
-
-      .row.marketing
-        .col-lg-6
-          h4 HTML5 Boilerplate
-          p HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-
-          h4 Sass
-          p Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-
-          h4 Bootstrap
-          p Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-
-          h4 Modernizr
-          p Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
-
-          .footer
-            p &hearts; from the Yeoman team
-
-    // Google Analytics: change UA-XXXXX-X to be your site's ID.
-    script.
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-
+        h1 Michael Perkhofer
+        p.lead Full Stack Developer
+    section#quotemachine
+      .container-fluid
+        .col-lg-4.col-sm-6
+          h1 Random Quote machine
+          p
+            | It displays quotes from the
+            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
+            | and presents them in combination with images from
+            a(href='https://www.themoviedb.org/', target='_blank') TMDb
+            | .
+        .col-lg-8.col-sm-6
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/quotemachine03.jpg', class="img-responsive")
+    section#localweather
+      .container-fluid
+        .col-lg-4.col-sm-6
+          h1 Random Quote machine
+          p
+            | It displays quotes from the
+            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
+            | and presents them in combination with images from
+            a(href='https://www.themoviedb.org/', target='_blank') TMDb
+            | .
+        .col-lg-8.col-sm-6
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/weather.png', class="img-responsive")
+    section#calculator
+      .container-fluid
+        .col-lg-4.col-sm-6
+          h1 Random Quote machine
+          p
+            | It displays quotes from the
+            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
+            | and presents them in combination with images from
+            a(href='https://www.themoviedb.org/', target='_blank') TMDb
+            | .
+        .col-lg-8.col-sm-6
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/calculator.gif', class="img-responsive")
+    section#simon
+      .container-fluid
+        .col-lg-4.col-sm-6
+          h1 Random Quote machine
+          p
+            | It displays quotes from the
+            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
+            | and presents them in combination with images from
+            a(href='https://www.themoviedb.org/', target='_blank') TMDb
+            | .
+        .col-lg-8.col-sm-6
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/simon.png', class="img-responsive")
+    section#tictactoe
+      .container-fluid
+        .col-lg-4.col-sm-6
+          h1 Random Quote machine
+          p
+            | It displays quotes from the
+            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
+            | and presents them in combination with images from
+            a(href='https://www.themoviedb.org/', target='_blank') TMDb
+            | .
+        .col-lg-8.col-sm-6
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/tictac.png', class="img-responsive")
     // build:js scripts/vendor.js
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/bower_components/modernizr/modernizr.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js')
     // endbower
-    // endbuild
-
-    // build:js scripts/plugins.js
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
-    script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     // endbuild
 
     // build:js scripts/main.js
