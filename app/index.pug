@@ -61,49 +61,60 @@ html.no-js(lang='')
       .container-fluid
         .col-lg-4.col-sm-6.textbox
           h1 Show the local weather
-          p
-            | It displays quotes from the
-            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
-            |  and presents them in combination with images from
-            a(href='https://www.themoviedb.org/', target='_blank') TMDb
-            | .
-        .col-lg-8.col-sm-6
+          ul
+            li Shows the local weather using
+              a(href="http://forecast.io", target="_blank")  forecastIO
+            li Accessing HTML Geolocation API
+            li Build using
+              a(href="https://facebook.github.io/react/", target="_blank")  reactJS
+            li Show current location, using Google Maps
+          a.btn.btn-primary(href="https://github.com/mperkh/fcc-weather", target='_blank') Source
+          a.btn.btn-primary(href="https://codepen.io/mperkh/full/akRWZy/", target='_blank') Try it
+        .col-lg-6.col-sm-4.col-lg-offset-1.col-sm-offset-1
           img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/weather.png', class="img-responsive img-rounded")
     section#calculator
       .container-fluid
         .col-lg-4.col-sm-6.textbox
           h1 Calculator
-          p
-            | It displays quotes from the
-            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
-            | and presents them in combination with images from
-            a(href='https://www.themoviedb.org/', target='_blank') TMDb
-            | .
-        .col-lg-8.col-sm-6
-          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/calculator.gif', class="img-responsive img-rounded")
+          ul
+            li A javascript version of a
+              a(href="http://mycalcdb.free.fr/main.php?l=0&id=2916", targt="_blank")  Braun ET66 aka 4776 version 2
+            li Build using
+              a(href="https://facebook.github.io/react/", target="_blank")  reactJS
+            img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/calculator.gif', class="img-responsive img-rounded")
+            a.btn.btn-primary(href="https://github.com/mperkh/fcc-calculator", target='_blank') Source
+            a.btn.btn-primary(href="http://codepen.io/mperkh/full/QKwQbQ/", target='_blank') Try it
+        .col-lg-6.col-sm-6.col-lg-offset-1
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/calculator01.png', class="img-responsive img-rounded")
+          img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/calculator02.png', class="img-responsive img-rounded")
     section#simon
       .container-fluid
         .col-lg-4.col-sm-6.textbox
           h1 Simons's Game
-          p
-            | It displays quotes from the
-            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
-            | and presents them in combination with images from
-            a(href='https://www.themoviedb.org/', target='_blank') TMDb
-            | .
-        .col-lg-8.col-sm-6
+          ul
+            li Simons's game, using
+              a(href="http://brutalistwebsites.com/", target="_blank")  brutalist design
+            li Makes use of
+              a(href="http://kristopolous.github.io/BOOTSTRA.386/", target="_blank")  bootstra.386
+              | , a vintage 1980s DOS inspired Twitter Bootstrap theme.
+            li Build using
+              a(href="https://facebook.github.io/react/", target="_blank")  reactJS
+            a.btn.btn-primary(href="https://github.com/mperkh/fcc-simon", target='_blank') Source
+            a.btn.btn-primary(href="https://codepen.io/mperkh/full/PGdmWP/", target='_blank') Try it
+        .col-lg-6.col-sm-6.col-lg-offset-1
           img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/simon.png', class="img-responsive img-rounded")
     section#tictactoe
       .container-fluid
         .col-lg-4.col-sm-6.textbox
           h1 Tic Tac Toe
-          p
-            | It displays quotes from the
-            a(href='http://www.imdb.com/chart/top', target='_blank') top 250 IMDb movies
-            | and presents them in combination with images from
-            a(href='https://www.themoviedb.org/', target='_blank') TMDb
-            | .
-        .col-lg-8.col-sm-6
+          ul
+            li Classic game Tic Tac Toe, written in Javascript and calssic bootstrap theme.
+            li The AI is a min/max implementation and it should not be possible to win against the AI.
+            li Build using
+              a(href="https://facebook.github.io/react/", target="_blank")  reactJS
+            a.btn.btn-primary(href="https://github.com/mperkh/fcc-tictactoe", target='_blank') Source
+            a.btn.btn-primary(href="https://codepen.io/mperkh/full/ozoQVX/", target='_blank') Try it
+        .col-lg-6.col-sm-6.col-lg-offset-1
           img(src='https://s3.amazonaws.com/f623f793d321325d3de5c7f6ff91528-default/fcc/portfolio/tictac.png', class="img-responsive img-rounded")
     // build:js scripts/vendor.js
     // bower:js
